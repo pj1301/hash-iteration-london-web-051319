@@ -25,7 +25,7 @@ def age_appropriate_birthday(birthday_kids)
   end
 end
 
-\def age_appropriate_birthday(birthday_kids)
+def age_appropriate_birthday(birthday_kids)
   # add your code snippet here!
   young = birthday_kids.select{|k,v| v <= 12}
   young.each do |name, age|
