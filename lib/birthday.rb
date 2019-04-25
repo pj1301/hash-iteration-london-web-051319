@@ -24,3 +24,15 @@ def age_appropriate_birthday(birthday_kids)
     end
   end
 end
+
+\def age_appropriate_birthday(birthday_kids)
+  # add your code snippet here!
+  young = birthday_kids.select{|k,v| v <= 12}
+  young.each do |name, age|
+    puts "Happy Birthday #{name}! You are now #{age} years old!"
+  end
+  old = birthday_kids.select{|k,v| v > 12}
+  old.each do |name, age|
+    puts "You are too old for this."
+  end
+end
